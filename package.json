@@ -4,7 +4,6 @@
   "version": "0.0.0",
   "type": "module",
   "homepage": "https://AbigabaMD.github.io/elitefixer-uganda-solutions",
-
   "scripts": {
     "dev": "vite",
     "build": "vite build",
