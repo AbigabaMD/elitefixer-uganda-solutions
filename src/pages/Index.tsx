@@ -1,12 +1,10 @@
-import Header from "@/components/layout/Header";
-import Footer from "@/components/layout/Footer";
-import Hero from "@/components/sections/Hero";
-import QuickServices from "@/components/sections/QuickServices";
-import HowItWorks from "@/components/sections/HowItWorks";
-import WhyChooseUs from "@/components/sections/WhyChooseUs";
-import SuccessStories from "@/components/sections/SuccessStories";
-import RequestForm from "@/components/sections/RequestForm";
-import Contact from "@/components/sections/Contact";
+import { Header } from "@/components/Header";
+import { Hero } from "@/components/Hero";
+import { Services } from "@/components/Services";
+import { HowItWorks } from "@/components/HowItWorks";
+import { Testimonials } from "@/components/Testimonials";
+import { Contact } from "@/components/Contact";
+import { Footer } from "@/components/Footer";
 
 const Index = () => {
   return (
@@ -14,11 +12,9 @@ const Index = () => {
       <Header />
       <main>
         <Hero />
-        <QuickServices />
+        <Services />
         <HowItWorks />
-        <WhyChooseUs />
-        <SuccessStories />
-        <RequestForm />
+        <Testimonials />
         <Contact />
       </main>
       <Footer />
