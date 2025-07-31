@@ -8,51 +8,53 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* EliteFixers Brand Colors */
-    --background: 0 0% 97.3%; /* #F8F9FA */
-    --foreground: 210 11% 15%; /* #212529 */
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
 
     --card: 0 0% 100%;
-    --card-foreground: 210 11% 15%;
+    --card-foreground: 222.2 84% 4.9%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 210 11% 15%;
+    --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 206 85% 16%; /* #0C2845 - Trustworthy base */
-    --primary-foreground: 0 0% 98%;
+    --primary: 196 70% 58%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 196 70% 68%;
 
-    --secondary: 197 67% 35%; /* #17A2B8 - Fresh, interactive */
-    --secondary-foreground: 0 0% 98%;
+    --secondary: 196 50% 85%;
+    --secondary-foreground: 196 70% 20%;
 
-    --accent: 207 66% 27%; /* #144473 - Highlighting */
-    --accent-foreground: 0 0% 98%;
+    --muted: 220 14.3% 95.9%;
+    --muted-foreground: 220 8.9% 46.1%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 196 70% 58%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 206 85% 16%;
-
-    --success: 142 71% 45%;
-    --success-foreground: 0 0% 98%;
-
-    --warning: 45 93% 47%;
-    --warning-foreground: 0 0% 98%;
-
-    --hero-gradient: linear-gradient(135deg, hsl(206 85% 16%), hsl(207 66% 27%));
-    --card-gradient: linear-gradient(145deg, hsl(0 0% 100%), hsl(210 40% 98%));
-    --service-gradient: linear-gradient(135deg, hsl(197 67% 35%), hsl(207 66% 27%));
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 196 70% 58%;
     
-    --shadow-sm: 0 1px 2px 0 hsl(206 85% 16% / 0.05);
-    --shadow-md: 0 4px 6px -1px hsl(206 85% 16% / 0.1), 0 2px 4px -1px hsl(206 85% 16% / 0.06);
-    --shadow-lg: 0 10px 15px -3px hsl(206 85% 16% / 0.1), 0 4px 6px -2px hsl(206 85% 16% / 0.05);
-    --shadow-xl: 0 20px 25px -5px hsl(206 85% 16% / 0.1), 0 10px 10px -5px hsl(206 85% 16% / 0.04);
+    /* Elite brand colors */
+    --elite-navy: 200 87% 15%;
+    --elite-silver: 220 9% 46%;
+    --elite-cream: 45 25% 98%;
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
+    --gradient-elite: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--elite-navy)) 100%);
+    --gradient-subtle: linear-gradient(180deg, hsl(var(--background)) 0%, hsl(var(--elite-cream)) 100%);
+    
+    /* Shadows */
+    --shadow-elite: 0 10px 40px -10px hsl(var(--primary) / 0.3);
+    --shadow-card: 0 4px 20px -4px hsl(var(--primary) / 0.1);
+    
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
-    --radius: 0.75rem;
+    --radius: 0.5rem;
 
     --sidebar-background: 0 0% 98%;
 
@@ -81,8 +83,9 @@ All colors MUST be HSL.
     --popover: 222.2 84% 4.9%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 196 70% 58%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 196 70% 68%;
 
     --secondary: 217.2 32.6% 17.5%;
     --secondary-foreground: 210 40% 98%;
@@ -90,15 +93,25 @@ All colors MUST be HSL.
     --muted: 217.2 32.6% 17.5%;
     --muted-foreground: 215 20.2% 65.1%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 196 70% 58%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
 
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
+    --ring: 196 70% 58%;
+    
+    /* Elite brand colors - dark mode */
+    --elite-navy: 200 87% 25%;
+    --elite-silver: 220 9% 66%;
+    --elite-cream: 45 25% 8%;
+    
+    /* Gradients - dark mode */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
+    --gradient-elite: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--elite-navy)) 100%);
+    --gradient-subtle: linear-gradient(180deg, hsl(var(--background)) 0%, hsl(var(--elite-cream)) 100%);
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
