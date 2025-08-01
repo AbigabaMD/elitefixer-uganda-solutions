@@ -13,6 +13,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { toast } from "sonner";
 import { MessageSquare } from "lucide-react";
+import emailjs from '@emailjs/browser';
 
 export const InquiryDialog = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -25,7 +26,7 @@ export const InquiryDialog = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     if (!formData.name || !formData.contact || !formData.details) {
       toast.error("Please fill in all required fields");
       return;
@@ -34,19 +35,18 @@ export const InquiryDialog = () => {
     setIsSubmitting(true);
 
     try {
-      // Create mailto link
-      const subject = encodeURIComponent("New Service Inquiry from " + formData.name);
-      const body = encodeURIComponent(
-        `Name: ${formData.name}\n` +
-        `Contact: ${formData.contact}\n` +
-        `Request Details:\n${formData.details}\n\n` +
-        `Sent from EliteFixers website`
+      await emailjs.send(
+        'service_uazg46s', // From EmailJS dashboard
+        'template_rdb0un5', // From EmailJS dashboard
+        {
+          name: formData.name,
+          contact: formData.contact,
+          details: formData.details,
+        },
+        'Ezw6G-mfFo02cTTSU' // From EmailJS dashboard
       );
-      
-      const mailtoLink = `mailto:elitefixers.services@gmail.com?subject=${subject}&body=${body}`;
-      window.location.href = mailtoLink;
 
-      toast.success("Inquiry submitted successfully! Your email client should open.");
+      toast.success("Inquiry submitted successfully!");
       setFormData({ name: "", contact: "", details: "" });
       setIsOpen(false);
     } catch (error) {

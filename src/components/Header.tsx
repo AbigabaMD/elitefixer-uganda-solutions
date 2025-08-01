@@ -13,6 +13,7 @@ export const Header = () => {
         {/* Logo */}
         <div className="flex items-center space-x-2">
           <img src={logo} alt="EliteFixers" className="h-8 w-auto" />
+          <span className="text-xl font-bold text-foreground">EliteFixers</span>
         </div>
 
         {/* Desktop Navigation */}
@@ -39,7 +40,7 @@ export const Header = () => {
               className="flex items-center space-x-2 text-sm text-muted-foreground hover:text-primary transition-smooth"
             >
               <Phone className="h-4 w-4" />
-              <span>+256 771 210855</span>
+              <span>+256 754 774150</span>
             </a>
             <a 
               href="https://wa.me/256754774150" 

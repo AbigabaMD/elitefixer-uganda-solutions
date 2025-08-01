@@ -23,6 +23,7 @@ const Header = () => {
           <div className="flex items-center space-x-2">
             <div className="w-10 h-10 rounded-lg overflow-hidden">
               <img src={eliteFixersLogo} alt="EliteFixers Logo" className="w-full h-full object-contain" />
+              
             </div>
             <div>
               <h1 className="text-xl font-bold text-primary">EliteFixers</h1>

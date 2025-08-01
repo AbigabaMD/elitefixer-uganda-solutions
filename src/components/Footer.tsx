@@ -11,6 +11,8 @@ export const Footer = () => {
           <div className="lg:col-span-2">
             <div className="mb-4 flex items-center space-x-2">
               <img src={logo} alt="EliteFixers" className="h-8 w-auto" />
+              <span className="text-xl font-bold text-foreground">EliteFixers</span>
+
             </div>
             <p className="mb-4 text-sm text-muted-foreground max-w-md">
               EliteFixers provides premium concierge services for discerning clients in Uganda. 
