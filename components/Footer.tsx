@@ -1,6 +1,6 @@
 import { Separator } from "@/components/ui/separator";
 import { Phone, Mail, MessageCircle } from "lucide-react";
-import logo from "@/assets/logo.svg";
+import Image from "next/image";
 
 export const Footer = () => {
   return (
@@ -10,7 +10,9 @@ export const Footer = () => {
           {/* Company Info */}
           <div className="lg:col-span-2">
             <div className="mb-4 flex items-center space-x-2">
-              <img src={logo} alt="EliteFixers" className="h-8 w-auto" />
+              <div className="h-8 w-auto">
+                <Image src="/images/logo.svg" alt="EliteFixers" width={32} height={32} />
+              </div>
               <span className="text-xl font-bold text-foreground">EliteFixers</span>
 
             </div>

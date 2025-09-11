@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Phone, MessageCircle } from "lucide-react";
-import eliteFixersLogo from "@/assets/elitefixers-logo.png";
+import Image from "next/image";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -22,7 +22,13 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center space-x-2">
             <div className="w-10 h-10 rounded-lg overflow-hidden">
-              <img src={eliteFixersLogo} alt="EliteFixers Logo" className="w-full h-full object-contain" />
+              <Image
+                src="/elitefixers-logo.png"
+                alt="EliteFixers Logo"
+                width={40}
+                height={40}
+                className="object-contain"
+              />
               
             </div>
             <div>

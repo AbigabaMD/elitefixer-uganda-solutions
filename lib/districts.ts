@@ -1,0 +1,20 @@
+// Uganda districts for the registration form
+export const UGANDA_DISTRICTS = [
+  'Abim', 'Adjumani', 'Agago', 'Alebtong', 'Amolatar', 'Amudat', 'Amuria', 'Amuru',
+  'Apac', 'Arua', 'Budaka', 'Bududa', 'Bugiri', 'Buhweju', 'Buikwe', 'Bukedea',
+  'Bukomansimbi', 'Bukwo', 'Bulambuli', 'Buliisa', 'Bundibugyo', 'Bushenyi',
+  'Busia', 'Butaleja', 'Butambala', 'Buvuma', 'Buyende', 'Dokolo', 'Gomba',
+  'Gulu', 'Hoima', 'Ibanda', 'Iganga', 'Isingiro', 'Jinja', 'Kaabong',
+  'Kabale', 'Kabarole', 'Kaberamaido', 'Kalangala', 'Kaliro', 'Kampala',
+  'Kamuli', 'Kamwenge', 'Kanungu', 'Kapchorwa', 'Kasese', 'Katakwi',
+  'Kayunga', 'Kibaale', 'Kiboga', 'Kibuku', 'Kiruhura', 'Kiryandongo',
+  'Kisoro', 'Kitgum', 'Koboko', 'Kole', 'Kotido', 'Kumi', 'Kween',
+  'Kyankwanzi', 'Kyegegwa', 'Kyenjojo', 'Lamwo', 'Lira', 'Luuka',
+  'Luwero', 'Lwengo', 'Lyantonde', 'Manafwa', 'Maracha', 'Masaka',
+  'Masindi', 'Mayuge', 'Mbale', 'Mbarara', 'Mitooma', 'Mityana',
+  'Mokono', 'Moroto', 'Moyo', 'Mpigi', 'Mubende', 'Mukono', 'Nakapiripirit',
+  'Nakaseke', 'Nakasongola', 'Namayingo', 'Namutumba', 'Napak', 'Nebbi',
+  'Ngora', 'Ntoroko', 'Ntungamo', 'Nwoya', 'Otuke', 'Oyam', 'Pader',
+  'Pallisa', 'Rakai', 'Rubirizi', 'Rukungiri', 'Sembabule', 'Serere',
+  'Sheema', 'Sironko', 'Soroti', 'Tororo', 'Wakiso', 'Yumbe', 'Zombo'
+].sort();
