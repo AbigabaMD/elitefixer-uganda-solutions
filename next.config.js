@@ -1,12 +1,8 @@
-// @ts-check
- 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output:'export',
-  distDir: 'dist',
-  images:{
-    unoptimized:true,
-  }
+  output: 'export',       // enables static export
+  distDir: 'dist',        // everything (build + export) goes here
+  images: { unoptimized: true }  // required for static export
 };
- 
-module.exports = nextConfig
+
+module.exports = nextConfig;
