@@ -21,7 +21,7 @@ export const Hero = () => {
 
           {/* Subheadline */}
           <p className="mb-8 text-xl text-muted-foreground lg:text-2xl">
-            Connecting discerning tourists, diaspora, and professionals with trusted local experts 
+            Providing discerning tourists, diaspora, and professionals with trusted local expertise 
             for seamless, discreet solutions to your every need in Uganda.
           </p>
 
